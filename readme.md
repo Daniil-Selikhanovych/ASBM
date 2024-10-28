@@ -119,6 +119,7 @@ This project is based on [DDGAN](https://github.com/NVlabs/denoising-diffusion-g
 
 ## Citation
 
+```
 @inproceedings{
 gushchin2024adversarial,
 title={Adversarial Schr\"odinger Bridge Matching},
@@ -127,3 +128,4 @@ booktitle={The Thirty-eighth Annual Conference on Neural Information Processing 
 year={2024},
 url={https://openreview.net/forum?id=L3Knnigicu}
 }
+```
