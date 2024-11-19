@@ -4,7 +4,7 @@ This is the official Python implementation of the NeurIPS 2024 paper "Adversaria
 
 The repository contains reproducible PyTorch source code for computing Schrödinger Bridge in high dimensions with adversarial neural networks. Examples are provided for toy problems (2D) and for the unpaired image-to-image translation task for various pairs of datasets. 
 
-<p align="center"><img src="pics/asbm_teaser.png" width="400" /></p>
+<p align="center"><img src="pics/asbm_teaser.png" width="800" /></p>
 
 ## Requirements ##
 Create the Anaconda environment with the following command:
@@ -43,9 +43,9 @@ and with $\epsilon=10$:
 ```
 bash train_celeba_128_T_4_imf_ema_sampling_eps_1.sh
 ```
-| <img src="pics/celeba_128_f_start_data_samples.png" width="100" /> | <img src="pics/asbm_celeba_128_samples_eps_1.png" width="288" /> | <img src="pics/asbm_celeba_128_samples_eps_10.png" width="288" /> |
+| Input | $T = 4, \epsilon = 10$ | $T = 4, \epsilon = 10$ |
 |:---:|:---:|:---:|
-| Input | $T = 4, \eps = 10$ | $T = 4, \eps = 10$ |
+| <img src="pics/celeba_128_f_start_data_samples.png" width="73" /> | <img src="pics/asbm_celeba_128_samples_eps_1.png" width="288" /> | <img src="pics/asbm_celeba_128_samples_eps_10.png" width="288" /> |
 
 ## SwissRoll, 2D, one-sided pretraining ##
 To pretrain ASBM for 2D Gaussian-to-SwissRoll translation before running D-IMF procedure with $\epsilon=0.03$ and $T=4$ run the following script:
