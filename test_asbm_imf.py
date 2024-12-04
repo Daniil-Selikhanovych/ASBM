@@ -292,7 +292,7 @@ def sample_and_test(args):
     path_to_save_gt_fid_statistics_forward = os.path.join(save_dir_gt_fid_statistics, "gt_statistics_forward.npz")
     path_to_save_gt_fid_statistics_backward = os.path.join(save_dir_gt_fid_statistics, "gt_statistics_backward.npz")
 
-    compute_fid = False
+    compute_fid = True
 
     if compute_fid:
         dims = 2048
@@ -434,10 +434,10 @@ def sample_and_test(args):
                                                                                                 args.batch_size, dims, device,
                                                                                                 mode, netG, args,
                                                                                                 pos_coeff)
-
+                    
                     if compute_fid:
                         del model_fid
-                        if mode == 'fw':
+                        if fw_or_bw == 'fw':
                             fid_value_test = calculate_frechet_distance(m1_test_pred, s1_test_pred, m1_test_gt_for, s1_test_gt_for)
                         else:
                             fid_value_test = calculate_frechet_distance(m1_test_pred, s1_test_pred, m1_test_gt_back, s1_test_gt_back)
