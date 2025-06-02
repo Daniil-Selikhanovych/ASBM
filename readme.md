@@ -99,9 +99,9 @@ and with $\epsilon=10$:
 cd experiment_scripts/swissroll
 bash train_celeba_128_T_4_imf_ema_sampling_eps_1.sh
 ```
-cd experiment_scripts/swissroll
 To visualize the results for D-IMF for $\epsilon=0.1$ run the following script:
 ```
+cd experiment_scripts/swissroll
 bash test_swiss_roll_imf_eps_0.1.sh
 ```
 
