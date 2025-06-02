@@ -1,8 +1,9 @@
+cd ../..
 T=4
-eps=10
+eps=1
 dataset="celeba"
-exp_name="asbm_unpaired_celeba_male2female_ema_bigger_nets_T_4_minibatch_ot_eps_10_celeba_128"
-master_port="6038"
+exp_name="asbm_unpaired_celeba_male2female_ema_bigger_nets_T_4_minibatch_ot_eps_1_celeba_128"
+master_port="6027"
 posterior="brownian_bridge"
 data_root="img_align_celeba"
 image_size=128
@@ -18,4 +19,4 @@ CUDA_VISIBLE_DEVICES=0 python train_asbm.py --dataset ${dataset} --num_timesteps
 --lazy_reg 15 --num_process_per_node 1 --ch_mult 1 1 2 2 4 4 --save_content --posterior ${posterior} --epsilon ${eps} \
 --master_port ${master_port} --data_root ${data_root} --image_size ${image_size} --use_ema \
 --ema_decay ${ema_decay} --save_ckpt_every ${save_ckpt_every} --save_content_every ${save_content_every} \
---use_minibatch_ot --num_process_per_node 1 
+--use_minibatch_ot --num_process_per_node 1

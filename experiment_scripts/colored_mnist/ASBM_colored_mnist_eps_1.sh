@@ -1,6 +1,6 @@
-
+cd ../..
 current_T=4
-current_eps=10
+current_eps=1
 current_innter_proj_iters=25000
 current_proj_iters=50000
 cur_mini_batch_OT=1

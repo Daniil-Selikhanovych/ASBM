@@ -1,3 +1,4 @@
+cd ../..
 exp_name="swiss_roll_imf_eps_0.1"
 epsilon=0.1
 dataset_name="swiss_roll_swiss_roll_to_gaussian"

@@ -1,7 +1,8 @@
+cd ../..
 T=4
 eps=1
 dataset="celeba_celeba_female_to_male"
-exp_name="ddgan_unpaired_celeba_ema_bigger_nets_T_4_imf_eps_1_celeba_128_ema_sampling"
+exp_name="ddgan_unpaired_celeba_ema_bigger_nets_T_4_imf_eps_10_celeba_128_ema_sampling"
 posterior="brownian_bridge"
 data_root="/trinity/home/daniil.selikhanovych/data/img_align_celeba"
 image_size=128

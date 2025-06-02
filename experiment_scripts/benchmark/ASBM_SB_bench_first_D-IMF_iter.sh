@@ -1,4 +1,4 @@
-
+cd ../..
 current_dim=
 current_eps=
 

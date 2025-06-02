@@ -1,3 +1,4 @@
+cd ../..
 exp_name="swiss_roll_imf_eps_0.03"
 epsilon=0.03
 exp_forward="swiss_roll_forward_exp_eps_0.03"

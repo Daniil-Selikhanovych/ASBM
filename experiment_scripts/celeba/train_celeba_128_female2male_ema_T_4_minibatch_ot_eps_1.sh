@@ -1,3 +1,4 @@
+cd ../..
 T=4
 eps=1
 dataset="celeba_female_to_male"

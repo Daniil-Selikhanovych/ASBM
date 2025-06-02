@@ -1,7 +1,8 @@
-exp_name="swiss_roll_imf_eps_0.3"
+cd ../..
+exp_name="swiss_roll_imf_eps_0.1"
 epsilon=0.1
-exp_forward="swiss_roll_forward_exp_eps_0.3"
-exp_backward="swiss_roll_backward_exp_eps_0.3"
+exp_forward="swiss_roll_forward_exp_eps_0.1"
+exp_backward="swiss_roll_backward_exp_eps_0.1"
 exp_forward_model="content_200000.pth"
 exp_backward_model="content_200000.pth"
 dataset_forward="swiss_roll"
